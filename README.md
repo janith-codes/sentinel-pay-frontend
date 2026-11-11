@@ -32,7 +32,7 @@
 
 ## What this is
 
-The browser-facing half of [SentinelPay](https://github.com/janith-codes/sentinel-pay), a Java 21 / Spring Boot payment gateway with AI-assisted fraud detection. The backend lives in its own repository; this one holds the console alone.
+The browser-facing half of [SentinelPay](https://github.com/janith-codes/sentinel-pay-backend), a Java 21 / Spring Boot payment gateway with AI-assisted fraud detection. The backend lives in its own repository; this one holds the console alone.
 
 It is a role-aware operator tool rather than a demo: an **account holder** sees their own account and ledger, while an **administrator** additionally gets platform-wide aggregation, account provisioning and the transactional-outbox recovery screen.
 
@@ -129,7 +129,7 @@ So every exchange goes through one in-flight map keyed by the token being spent 
 ### Prerequisites
 
 - **Node.js 22+** and **pnpm 11+**
-- The [SentinelPay API](https://github.com/janith-codes/sentinel-pay) cloned as a sibling directory, plus Docker for its Postgres, Redis and RabbitMQ
+- The [SentinelPay API](https://github.com/janith-codes/sentinel-pay-backend) cloned as a sibling directory, plus Docker for its Postgres, Redis and RabbitMQ
 
 ### 1 · Start the backend and its infrastructure
 
@@ -300,6 +300,6 @@ Every item here was read from the controllers, not assumed.
 
 <div align="center">
 
-Part of the **SentinelPay** platform · [API repository](https://github.com/janith-codes/sentinel-pay)
+Part of the **SentinelPay** platform · [API repository](https://github.com/janith-codes/sentinel-pay-backend)
 
 </div>
